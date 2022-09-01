@@ -105,6 +105,8 @@ function edades_1(array){
 // edades_1(edades);
 // console.log(edades);
 
+// Extra: Funcion max y min en una
+
 function minMax(arr) {
     let min = arr[0]
     let max = arr[0]
@@ -119,5 +121,28 @@ function minMax(arr) {
     return [min, max]
 }
 
-console.log(minMax(edades));
-console.log(edades);
+// console.log(minMax(edades));
+// console.log(edades);
+
+// prueba includes()
+let parametro = "holas"
+let saluda = ["hola", "hi", "2", 2]
+
+function incluye(array, x){
+    for (let i = 0; i < array.length; i++){
+        if(x === array[i]){
+            resultado = true
+            break
+        } else{
+            resultado = false
+        }
+    }
+    if(resultado){
+        return (x, "está en el array")
+    } else {
+        return (x, "no está en el array")
+    }
+}
+
+// let final = incluye(saluda, parametro)
+// console.log(final);
