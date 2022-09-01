@@ -90,7 +90,7 @@ function promEdades(array){
     return mensaje + promedio
 }
 
-console.log(promEdades(edades));
+// console.log(promEdades(edades));
 
 // 7. Incrementar en 1 todas las edades.
 
@@ -104,3 +104,20 @@ function edades_1(array){
 // console.log(edades);
 // edades_1(edades);
 // console.log(edades);
+
+function minMax(arr) {
+    let min = arr[0]
+    let max = arr[0]
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] < min){
+            min = arr[i]
+        }
+        if(arr[i] > max){
+            max = arr[i]
+        }
+    }
+    return [min, max]
+}
+
+console.log(minMax(edades));
+console.log(edades);
